@@ -186,7 +186,7 @@ sendingProgressHandler:(NXOAuth2ConnectionSendingProgressHandler)aSendingProgres
     [self applyParameters:requestParameters onRequest:startRequest];
     
     if (oauthAuthorizationHeader) {
-        [startRequest setValue:oauthAuthorizationHeader forHTTPHeaderField:@"Authorization"];
+        //[startRequest setValue:oauthAuthorizationHeader forHTTPHeaderField:@"Authorization"];
     }
     
     if (client.userAgent && ![startRequest valueForHTTPHeaderField:@"User-Agent"]) {
